@@ -130,6 +130,9 @@
     {
       "id": "sartv:kiepie-en-kandas",
       "name": "Kiepie en Kandas",
+      "releaseInfo": "1981",
+      "imdbId": "tt2022440",
+      "poster": "https://images.metahub.space/poster/medium/tt2022440/img",
       "description": "South African Afrikaans film.",
       "genres": ["Comedy"],
       "sources": []
