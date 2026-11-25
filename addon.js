@@ -3,6 +3,7 @@
 const { addonBuilder, serveHTTP } = require('stremio-addon-sdk')
 const fs = require('fs')
 const path = require('path')
+const { resolve } = require('./resolver')
 
 const CATALOGUE_PATH = path.join(__dirname, 'catalogue.json')
 
@@ -37,18 +38,26 @@ const toPreview = (type) => (e) => ({
   genres: e.genres
 })
 
+// Fill in poster/background from the resolver; hand-set catalogue values win.
+// A failed lookup never breaks a response.
+async function withArt(entry, type) {
+  let r = {}
+  try { r = await resolve(entry, type) } catch (e) { /* keep entry as-is */ }
+  return { ...entry, poster: entry.poster || r.poster || undefined, background: entry.background || r.background || undefined }
+}
+
 builder.defineCatalogHandler(async ({ type, extra }) => {
   const list = load()[type] || []
   const q = extra && extra.search ? extra.search.toLowerCase() : null
-  const metas = list
-    .filter((e) => !q || e.name.toLowerCase().includes(q))
-    .map(toPreview(type))
+  const matched = list.filter((e) => !q || e.name.toLowerCase().includes(q))
+  const metas = (await Promise.all(matched.map((e) => withArt(e, type)))).map(toPreview(type))
   return { metas }
 })
 
 builder.defineMetaHandler(async ({ type, id }) => {
-  const entry = (load()[type] || []).find((e) => e.id === id)
-  if (!entry) return { meta: null }
+  const found = (load()[type] || []).find((e) => e.id === id)
+  if (!found) return { meta: null }
+  const entry = await withArt(found, type)
 
   const meta = { ...toPreview(type)(entry), background: entry.background }
 
