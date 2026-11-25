@@ -1,0 +1,27 @@
+{
+  "id": "community.sa-retro-tv",
+  "version": "1.0.0",
+  "name": "South African Retro TV",
+  "description": "Classic South African television and films: 'Sgudi 'Snaysi, Orkney Snork Nie, Isidingo, Mapantsula and more. IMDb/TMDB cross-referenced.",
+  "resources": ["catalog", "meta", "stream"],
+  "types": ["series", "movie"],
+  "idPrefixes": ["sartv:", "tt", "tmdb:"],
+  "catalogs": [
+    {
+      "type": "series",
+      "id": "sartv-series",
+      "name": "SA Retro TV - Television",
+      "extra": [{ "name": "search", "isRequired": false }]
+    },
+    {
+      "type": "movie",
+      "id": "sartv-movie",
+      "name": "SA Retro TV - Movies",
+      "extra": [{ "name": "search", "isRequired": false }]
+    }
+  ],
+  "behaviorHints": {
+    "configurable": false,
+    "adult": false
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "stremio-sa-retro-tv",
+  "version": "1.0.0",
+  "description": "South African Retro TV - Stremio add-on (TV series and movies catalogue)",
+  "main": "addon.js",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node addon.js",
+    "validate": "node validate.js"
+  },
+  "dependencies": {
+    "stremio-addon-sdk": "^1.6.10"
+  },
+  "license": "MIT"
+}
