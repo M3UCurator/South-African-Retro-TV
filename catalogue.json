@@ -1,0 +1,146 @@
+{
+  "_readme": "Each entry's 'sources' list is what Stremio shows under 'streams'. Supported source fields: ytId (YouTube video id, plays in Stremio), url (direct mp4/m3u8 you are licensed to use), externalUrl (opens an official page in the browser). For series, add 'episodes' keyed 'season:episode' with their own sources. Only add sources from official/licensed uploaders (e.g. SABC, kykNET, rights-holder YouTube channels, SABC Plus).",
+  "series": [
+    {
+      "id": "sartv:sgudi-snaysi",
+      "name": "'Sgudi 'Snaysi",
+      "releaseInfo": "1986-1993",
+      "description": "Zulu-language SABC sitcom set in a Soweto house, following unemployed lodger S'dumo (Joe Mafela). 78 half-hour episodes.",
+      "genres": ["Comedy"],
+      "sources": [],
+      "episodes": {}
+    },
+    {
+      "id": "sartv:orkney-snork-nie",
+      "name": "Orkney Snork Nie",
+      "releaseInfo": "1989-1993",
+      "description": "Classic Afrikaans SABC sitcom about life in the town of Orkney.",
+      "genres": ["Comedy"],
+      "sources": [],
+      "episodes": {}
+    },
+    {
+      "id": "sartv:ballade-vir-n-enkeling",
+      "name": "Ballade vir 'n Enkeling",
+      "description": "South African television drama.",
+      "genres": ["Drama"],
+      "sources": [],
+      "episodes": {}
+    },
+    {
+      "id": "sartv:agter-elke-man",
+      "name": "Agter Elke Man",
+      "description": "South African television series.",
+      "genres": ["Drama"],
+      "sources": [],
+      "episodes": {}
+    },
+    {
+      "id": "sartv:interster",
+      "name": "Interster",
+      "description": "South African television series.",
+      "genres": ["Drama"],
+      "sources": [],
+      "episodes": {}
+    },
+    {
+      "id": "sartv:haas-das-se-nuuskas",
+      "name": "Haas Das se Nuuskas",
+      "description": "Beloved Afrikaans children's puppet programme.",
+      "genres": ["Family"],
+      "sources": [],
+      "episodes": {}
+    },
+    {
+      "id": "sartv:pumpkin-patch",
+      "name": "Pumpkin Patch",
+      "description": "South African children's television programme.",
+      "genres": ["Family"],
+      "sources": [],
+      "episodes": {}
+    },
+    {
+      "id": "sartv:die-sonkring",
+      "name": "Die Sonkring",
+      "description": "South African television series.",
+      "genres": ["Drama"],
+      "sources": [],
+      "episodes": {}
+    },
+    {
+      "id": "sartv:ubambo-lwami",
+      "name": "Ubambo Lwami",
+      "description": "South African television drama.",
+      "genres": ["Drama"],
+      "sources": [],
+      "episodes": {}
+    },
+    {
+      "id": "sartv:isidingo",
+      "name": "Isidingo",
+      "releaseInfo": "1998-2020",
+      "description": "SABC 3 soap opera set in the mining town of Horizon Deep.",
+      "genres": ["Drama"],
+      "sources": [
+        {
+          "name": "SABC Plus",
+          "title": "Isidingo on SABC Plus (official, opens browser)",
+          "externalUrl": "https://sabc-plus.com/show/234141/Isidingo"
+        }
+      ],
+      "episodes": {}
+    }
+  ],
+  "movie": [
+    {
+      "id": "sartv:the-gods-must-be-crazy",
+      "name": "The Gods Must Be Crazy",
+      "releaseInfo": "1980",
+      "description": "Jamie Uys's comedy about a Kalahari bushman and a Coca-Cola bottle.",
+      "genres": ["Comedy"],
+      "sources": []
+    },
+    {
+      "id": "sartv:mapantsula",
+      "name": "Mapantsula",
+      "releaseInfo": "1988",
+      "description": "Oliver Schmitz's landmark anti-apartheid crime drama following petty thief Panic. Restored in 4K by Film Movement.",
+      "genres": ["Crime", "Drama"],
+      "sources": [
+        {
+          "name": "Where to watch",
+          "title": "Mapantsula - legal streaming options (JustWatch)",
+          "externalUrl": "https://www.justwatch.com/us/movie/mapantsula"
+        },
+        {
+          "name": "Netflix ZA",
+          "title": "Mapantsula on Netflix South Africa",
+          "externalUrl": "https://www.netflix.com/za/title/81776089"
+        }
+      ]
+    },
+    {
+      "id": "sartv:jock-of-the-bushveld",
+      "name": "Jock of the Bushveld",
+      "releaseInfo": "1986",
+      "description": "Adventure film based on Sir Percy FitzPatrick's classic about a transport rider and his Staffordshire Bull Terrier.",
+      "genres": ["Adventure", "Family"],
+      "sources": []
+    },
+    {
+      "id": "sartv:kiepie-en-kandas",
+      "name": "Kiepie en Kandas",
+      "description": "South African Afrikaans film.",
+      "genres": ["Comedy"],
+      "sources": []
+    },
+    {
+      "id": "sartv:oh-shucks-here-comes-untag",
+      "name": "Oh Shucks! Here Comes UNTAG",
+      "releaseInfo": "1990",
+      "description": "Jamie Uys's comedy set around the UN transition in Namibia.",
+      "genres": ["Comedy"],
+      "sources": []
+    }
+  ]
+}
